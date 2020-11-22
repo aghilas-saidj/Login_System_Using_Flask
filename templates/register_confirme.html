@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='js/main.js')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='img/wave.png')}}">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+      <a style="color: #999" href="/login">LOGIN</a>
+      <a style="color: #999" href="/register">REGISTER</a>
+      <a style="color: #999" href="/profil">PROFILE</a>
+
+	<img class="wave" src="static/img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="static/img/bg.svg">
+		</div>
+		<div >
+   <form>
+
+	<div >
+	<h1 style="color:green">Welcome {{  username }} </h1>
+    <h4>Register Success   ===>    Your Username Is :   {{  username  }}  and Your Password Is :  {{  password  }}
+    <a href="/login"> Clic Here To Login</a></h4>
+
+    </div>
+   </form>
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>
